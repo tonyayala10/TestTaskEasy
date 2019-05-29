@@ -22,7 +22,7 @@ public interface ScheduleRepo extends JpaRepository<Schedule, Long>{
 	
 	List<Schedule> findAll();
 	
-	@Query("SELECT s FROM Schedule s from s.scheduleActive =:scheduleActive")
+	@Query("SELECT s FROM Schedule s where s.scheduleActive =:scheduleActive")
 	List<Schedule> findAllActivo(@Param("scheduleActive") String scheduleActive);
 
 }
