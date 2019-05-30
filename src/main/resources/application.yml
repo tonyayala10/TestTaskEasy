@@ -6,7 +6,7 @@ spring:
       ddl-auto: update
   datasource:
     driver-class-name: org.postgresql.Driver
-    url: jdbc:postgresql://localhost:5432/pruebaTecnica
+    url: jdbc:postgresql://localhost/pruebaTecnica
     username: postgres
     password: 123456
     
